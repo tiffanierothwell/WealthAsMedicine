@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wealth as Medicine — Get Early Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f7f4ef;
+      --ink: #1c1a16;
+      --gold: #8a6c2a;
+      --muted: #7a7060;
+      --light: #ede9e0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    nav {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--light);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    .hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 9vw, 6rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .rule {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 3rem;
+      opacity: 0.5;
+    }
+
+    .body-copy {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .body-copy strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .authors {
+      font-size: 0.78rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+
+    /* Sign-up section */
+    .signup {
+      background: var(--ink);
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    .signup-inner {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .signup h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--bg);
+      margin-bottom: 1rem;
+    }
+
+    .signup p {
+      font-size: 0.92rem;
+      color: #8a8070;
+      font-weight: 300;
+      margin-bottom: 2.25rem;
+      line-height: 1.7;
+    }
+
+    .form-group {
+      display: flex;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px solid rgba(138,108,42,0.45);
+      transition: border-color 0.2s;
+    }
+
+    .form-group:focus-within {
+      border-color: var(--gold);
+    }
+
+    .form-group input[type="email"] {
+      flex: 1;
+      padding: 0.9rem 1.2rem;
+      background: rgba(255,255,255,0.04);
+      border: none;
+      color: var(--bg);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .form-group input::placeholder {
+      color: #4a4438;
+    }
+
+    .form-group button {
+      padding: 0.9rem 1.5rem;
+      background: var(--gold);
+      border: none;
+      color: var(--bg);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .form-group button:hover {
+      background: #a07e38;
+    }
+
+    .privacy {
+      font-size: 0.72rem;
+      color: #4a4438;
+      margin-top: 0.9rem;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      border-top: 1px solid var(--light);
+    }
+
+    @media (max-width: 480px) {
+      .form-group {
+        flex-direction: column;
+      }
+      .form-group input[type="email"],
+      .form-group button {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Wealth as Medicine</span>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">A New Book &mdash; Coming Soon</p>
+
+    <h1>Wealth as<br><em>Medicine</em></h1>
+
+    <p class="tagline">What if your finances could be the most powerful<br>prescription you've never been given?</p>
+
+    <div class="rule"></div>
+
+    <p class="body-copy">
+      Most of us treat wealth and well-being as separate conversations.
+      <strong>Wealth as Medicine</strong> makes the case they never should have been.
+      Drawing on years of experience at the intersection of entrepreneurship, investment,
+      and holistic living, this book offers a new lens for understanding how
+      financial clarity unlocks <em>every other area of your life</em>.
+    </p>
+
+    <p class="authors">Mike David &amp; Michelle</p>
+  </section>
+
+  <section class="signup">
+    <div class="signup-inner">
+      <h2>Get First Access</h2>
+      <p>Be among the first to read it. Drop your email and we'll reach out the moment it's available — no noise, just the good stuff.</p>
+      <form class="form-group" action="https://formspree.io/f/FORM_ID_HERE" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <button type="submit">Notify Me</button>
+      </form>
+      <p class="privacy">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Mike David &amp; Michelle. All rights reserved.
+  </footer>
+
+</body>
+</html>
