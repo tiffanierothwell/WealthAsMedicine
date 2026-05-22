@@ -137,51 +137,22 @@
       line-height: 1.7;
     }
 
-    .form-group {
-      display: flex;
-      max-width: 420px;
-      margin: 0 auto;
-      border-radius: 3px;
-      overflow: hidden;
-      border: 1px solid rgba(138,108,42,0.45);
-      transition: border-color 0.2s;
-    }
-
-    .form-group:focus-within {
-      border-color: var(--gold);
-    }
-
-    .form-group input[type="email"] {
-      flex: 1;
-      padding: 0.9rem 1.2rem;
-      background: rgba(255,255,255,0.04);
-      border: none;
-      color: var(--bg);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      outline: none;
-    }
-
-    .form-group input::placeholder {
-      color: #4a4438;
-    }
-
-    .form-group button {
-      padding: 0.9rem 1.5rem;
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2.5rem;
       background: var(--gold);
-      border: none;
       color: var(--bg);
       font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       font-weight: 600;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      cursor: pointer;
-      white-space: nowrap;
+      text-decoration: none;
+      border-radius: 3px;
       transition: background 0.2s;
     }
 
-    .form-group button:hover {
+    .cta-button:hover {
       background: #a07e38;
     }
 
@@ -201,6 +172,11 @@
     }
 
     @media (max-width: 480px) {
+      .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
       .form-group {
         flex-direction: column;
       }
@@ -242,10 +218,7 @@
     <div class="signup-inner">
       <h2>Get First Access</h2>
       <p>Be among the first to read it. Drop your email and we'll reach out the moment it's available — no noise, just the good stuff.</p>
-      <form class="form-group" action="https://formspree.io/f/FORM_ID_HERE" method="POST">
-        <input type="email" name="email" placeholder="your@email.com" required />
-        <button type="submit">Notify Me</button>
-      </form>
+      <a href="https://forms.gle/8qcFEnAaTd7rCFRk8" target="_blank" class="cta-button">Sign Up for Early Access</a>
       <p class="privacy">No spam. Unsubscribe anytime.</p>
     </div>
   </section>
